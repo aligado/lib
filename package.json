@@ -1,0 +1,33 @@
+{
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "A micro webapp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scrapy"
+  ],
+  "author": "alpc32",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "connect": "^3.5.0",
+    "crypto": "^0.0.3",
+    "got": "^6.7.1",
+    "http": "^0.0.0",
+    "http-proxy": "^1.16.2",
+    "https": "^1.0.0",
+    "iconv-lite": "^0.4.15",
+    "md5": "^2.2.1",
+    "mongodb": "^2.2.22",
+    "mongoose": "^4.8.1",
+    "proxy-agent": "^2.0.0",
+    "request": "^2.79.0",
+    "superagent": "^3.4.1",
+    "superagent-proxy": "^1.0.2",
+    "tunnel": "^0.0.4",
+    "utility": "^1.11.0"
+  }
+}
