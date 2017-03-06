@@ -16,7 +16,14 @@ const fs = require('fs'),
 
 let x = 'https://s.2.taobao.com/list/list.htm?st_edtime=1&page=1&q=new+3ds&ist=0'
 
-function analyseHtml (html) {
+function strategyF2taobao(url, db) {
+  this.url = url
+  this.db = db
+}
+strategyF2taobao.prototype.request = () => {
+  return startRequest(this.url)
+}
+strategyF2taobao.prototype.analyseHtml => (html) => {
   let $ = cheerio.load(html,{decodeEntities: false, ignoreWhitespace: true});
   const Items = []
   $('ul.item-lists li').each( (i, elem) => {

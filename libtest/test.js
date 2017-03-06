@@ -1,17 +1,11 @@
-function hello (val) {
-  this.a = 1;
-  this.b = 2;
-  //hello.a = 2;
-}
-
-function hello1 (val) {
-  var hello = {}
-  hello.a = 1;
-  hello.b = 2;
-  //hello.a = 2;
-  return hello
-}
-var test = new hello();
-var test1 = hello1()
-console.log(test.a)
-console.log(test1.a)
+const tt = require('./test1')
+let t1 = new tt 
+let t1a = new tt
+let t2 = require('./test2')
+let t2a = require('./test2')
+console.log(t1.a, t1a.a)
+t1.a = 'bb'
+console.log(t1.a, t1a.a)
+if ( t1.a === t1a.a ) console.log( 'ttt111' )
+if ( t2 === t2a ) console.log( 'ttt222' )
+if ( {1:1} === {1:1} ) console.log('333')
